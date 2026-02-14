@@ -1,0 +1,7 @@
+CRITICAL SolidJS WebContainer Rules:
+- package.json MUST have "type": "module"
+- vite.config.ts uses vite-plugin-solid
+- index.html MUST exist at project root with <script type="module" src="/src/index.tsx">
+- ALWAYS use `npm run dev` to start — never use bare `vite`
+- SolidJS uses JSX but is NOT React — use class instead of className, no virtual DOM
+- Tailwind CSS is configured via tailwind.config.js and postcss.config.js
